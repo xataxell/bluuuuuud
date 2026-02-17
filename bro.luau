@@ -623,6 +623,7 @@
                         Multi = true,
                         Flag = Cfg.Flag .. "_RAINBOW_FLAG"
                     })
+					Items.Speed = Section:Slider({Min = 0, Max = 500, Intervals = 5, Value = 100, Flag = Cfg.Flag.."_ANIMATION_SPEED"})
 
                     task.spawn(function()
                         while true do 
@@ -641,7 +642,7 @@
                                 continue 
                             end 
 
-                            local Sine = math.abs(math.sin(tick()))
+                            local Sine = math.abs(math.sin(tick() * Cfg.Flag.."_ANIMATION_SPEED"))
                             local Hue = table.find(Flag, "Rainbow") and Sine or h 
                             local Alpha = table.find(Flag, "Breathing") and Sine or a
 
