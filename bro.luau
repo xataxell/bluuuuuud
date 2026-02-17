@@ -642,7 +642,7 @@
                                 continue 
                             end 
 
-                            local Sine = math.abs(math.sin(tick() * Cfg.Flag.."_ANIMATION_SPEED"))
+                            local Sine = math.abs(math.sin(tick() * Cfg.Flag.."_ANIMATION_SPEED"/100))
                             local Hue = table.find(Flag, "Rainbow") and Sine or h 
                             local Alpha = table.find(Flag, "Breathing") and Sine or a
 
