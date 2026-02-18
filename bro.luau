@@ -624,8 +624,7 @@
                         Flag = Cfg.Flag .. "_RAINBOW_FLAG"
                     })
                     local Section = setmetatable(Cfg, Library)
-                    local Section = setmetatable(Cfg, Library)
-                    Items.Speed = Section:Slider({Min = 0, Max = 500, Decimals = 5, Value = 100, Flag = Cfg.Flag.."_ANIMATION_SPEED"})
+                    Items.Speed = Section:Slider({Min = 0, Max = 500, Decimal = 5, Default = 100, Flag = Cfg.Flag.."_ANIMATION_SPEED"})
 
                     task.spawn(function()
                         while true do 
