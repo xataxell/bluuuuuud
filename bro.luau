@@ -4278,7 +4278,7 @@
                             Cfg.Set(option)
                         end
                     end, Default = Cfg.Mode, Flag = Cfg.Flag .. "_MODE"})
-                    Section:Toggle({Name = "Show on list", Default = true, Flag = Cfg.Flag .. "_LIST", Callback = function()
+                    Section:Toggle({Name = "Show on list", Default = Show, Flag = Cfg.Flag .. "_LIST", Callback = function()
                         KeybindElement.SetVisible(Flags[Cfg.Flag .. "_LIST"] and Cfg.Active or false)
                     end})
                 --
@@ -4929,8 +4929,7 @@
                 Section:Slider({Name = "Dragging Speed", Min = 0, Max = 1, Decimal = .01, Default = .05, Callback = function(num)
                     Library.DraggingSpeed = num
                 end})
-                Section:Label({Name = "Menu Bind"}):Keybind({Name = "Menu Bind", Key = Enum.KeyCode.LeftControl, Callback = function(bool) 
-                    print(bool)
+                Section:Label({Name = "Menu Bind"}):Keybind({Name = "Menu Bind", ShowInList = false, Key = Enum.KeyCode.LeftControl, Callback = function(bool) 
                     Window.SetVisible(bool) 
                 end})
                 Window.Tweening = false
