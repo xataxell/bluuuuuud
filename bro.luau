@@ -4278,7 +4278,7 @@
                             Cfg.Set(option)
                         end
                     end, Default = Cfg.Mode, Flag = Cfg.Flag .. "_MODE"})
-                    Section:Toggle({Name = "Show on list", Flag = Cfg.Flag .. "_LIST", Callback = function()
+                    Section:Toggle({Name = "Show on list", Default = true, Flag = Cfg.Flag .. "_LIST", Callback = function()
                         KeybindElement.SetVisible(Flags[Cfg.Flag .. "_LIST"] and Cfg.Active or false)
                     end})
                 --
