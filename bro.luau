@@ -41,7 +41,8 @@
         TweeningSpeed = .3;
         DraggingSpeed = .05;
         Tweening = false;
-		GameName = 'Universal';
+        GameName = 'Universal';
+        Status = 'Private'
     }
 
     local themes = {
@@ -2018,7 +2019,7 @@
                     Cfg.Tick = Tick
 
                     local Ping = math.floor(Stats.PerformanceStats.Ping:GetValue())
-                    Cfg.ChangeWatermarkTitle(string.format('%s <font color = "%s">/ %s / Public / %s / %sfps / %sms</font>', Cfg.Name, Library:ConvertHex(themes.preset.text_color), Library.GameName, os.date("%x / %X"), Cfg.Fps, Ping))
+                    Cfg.ChangeWatermarkTitle(string.format('%s <font color = "%s">/ %s / Library.Status / %s / %sfps / %sms</font>', Cfg.Name, Library:ConvertHex(themes.preset.text_color), Library.GameName, os.date("%x / %X"), Cfg.Fps, Ping))
 
                     Cfg.Fps = 0
                 end 
