@@ -4934,10 +4934,10 @@
                     Window.SetVisible(bool) 
                 end})
                 Window.Tweening = false
-                Section:Toggle({Name = "Toggle Watermark", Callback = function(bool)
+                Section:Toggle({Name = "Toggle Watermark", Default = true, Callback = function(bool)
                     Window.SetWatermarkVisible(bool)
                 end})
-                Section:Toggle({Name = "Toggle Keybind List", Callback = function(bool)
+                Section:Toggle({Name = "Toggle Keybind List", Default = true, Callback = function(bool)
                     Library.KeybindList.Items.Holder.Visible = bool 
                     Library.KeybindList.Items.List.Visible = bool 
                 end})
