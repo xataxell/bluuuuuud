@@ -4927,7 +4927,7 @@
                 Section:Dropdown({Name = "Tweening Style", Options = {"Linear", "Sine", "Back", "Quad", "Quart", "Quint", "Bounce", "Elastic", "Exponential", "Circular", "Cubic"}, Flag = "LibraryEasingStyle", Default = "Quint", Callback = function(Option)
                     Library.EasingStyle = Enum.EasingStyle[Option]
                 end});
-                Section:Slider({Name = "Dragging Speed", Min = 0, Max = 1, Decimal = .01, Default = .05, Callback = function(num)
+                Section:Slider({Name = "Dragging Speed", Min = 0, Max = 1, Decimal = .01, Default = .02, Callback = function(num)
                     Library.DraggingSpeed = num
                 end})
                 Section:Label({Name = "Menu Bind"}):Keybind({Name = "Menu Bind", ShowInList = false, Key = Enum.KeyCode.LeftControl, Callback = function(bool) 
