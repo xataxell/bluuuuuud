@@ -2018,7 +2018,7 @@
                 if Tick - Cfg.Tick >= 1 then 
                     Cfg.Tick = Tick
 
-                    local Ping = math.floor(Stats.PerformanceStats.Ping:GetValue())
+                    local Ping = math.floor(Stats.Network.ServerStatsItem['Data Ping']:GetValue())
                     Cfg.ChangeWatermarkTitle(string.format('%s <font color = "%s">/ %s / %s / %s / %sfps / %sms</font>', Cfg.Name, Library:ConvertHex(themes.preset.text_color), Library.GameName, Library.Status, os.date("%x / %X"), Cfg.Fps, Ping))
 
                     Cfg.Fps = 0
