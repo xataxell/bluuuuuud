@@ -49,13 +49,13 @@
         preset = {
             inline = rgb(46, 46, 46),
             outline = rgb(10, 10, 15),
-            accent = rgb(111, 212, 255),
+            accent = rgb(218, 165, 95),
             background = rgb(20, 20, 25),              
-            misc_1 = rgb(30, 30, 35),
+            misc_1 = rgb(23, 23, 28),
             text_color = rgb(245, 245, 245),
             unselected = rgb(145, 145, 145),
             tooltip = rgb(73, 73, 73),
-            misc_2 = rgb(23, 23, 28),
+            misc_2 = rgb(30, 30, 35),
             font = "ProggyClean",
             textsize = 12
         },
