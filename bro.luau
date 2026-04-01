@@ -25,7 +25,7 @@
 
 -- Library init
     getgenv().Library = {
-        Directory = "epsteinware/foresto",
+        Directory = "orion/foresto",
         Folders = {
             "/fonts",
             "/configs",
