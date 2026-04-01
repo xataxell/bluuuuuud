@@ -7396,7 +7396,7 @@
                 Toggle:Colorpicker({Name = "Outline", Color = rgb(255, 255, 255), Transparency = 0.5, Callback = function(color, alpha)
                     Options["Chams Outline"] = Flags[Cfg.Name .. "_OUTLINE_CHAMS"]
                 end, Flag = Cfg.Name .. "_OUTLINE_CHAMS"})
-                self.Section:Slider({Name = 'Transparency', Min = -1, Max = 1, Default 0, Flag = Cfg.Name..'_FILL_TRANSPARENCY_CHAMS'})
+                self.Section:Slider({Name = 'Transparency', Min = -1, Max = 1, Default = 0, Flag = Cfg.Name..'_FILL_TRANSPARENCY_CHAMS'})
             end
 
             return setmetatable(Cfg, Library)
